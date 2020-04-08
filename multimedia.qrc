@@ -1,0 +1,22 @@
+<RCC>
+    <qresource prefix="/images">
+        <file alias="background">images/background.png</file>
+        <file alias="bird">images/bird.png</file>
+        <file alias="ground">images/ground.png</file>
+        <file alias="pipe">images/pipe.png</file>
+        <file alias="feather">images/feather.png</file>
+        <file alias="empty-star">images/empty-star.png</file>
+        <file alias="fill-star">images/fill-star.png</file>
+    </qresource>
+    <qresource prefix="/audio">
+        <file alias="explosion">audio/explosion.wav</file>
+        <file alias="hurt">audio/hurt.wav</file>
+        <file alias="jump">audio/jump.wav</file>
+        <file alias="score">audio/score.wav</file>
+        <file alias="music">audio/music.wav</file>
+        <file alias="pause">audio/pause.wav</file>
+    </qresource>
+    <qresource prefix="/fonts">
+        <file alias="flappy">fonts/flappy.ttf</file>
+    </qresource>
+</RCC>
