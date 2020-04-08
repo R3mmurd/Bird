@@ -1,7 +1,6 @@
 # Fatty Bird
 
-### A fun different implementation of the
-[Flappy Bird](https://en.wikipedia.org/wiki/Flappy_Bird) game by Dong Nguyen.
+### A fun different implementation of the [Flappy Bird](https://en.wikipedia.org/wiki/Flappy_Bird) game by Dong Nguyen.
 
 
 Images, sounds, and fonts from [CS50 Game development course](https://www.edx.org/es/course/cs50s-introduction-to-game-development).
