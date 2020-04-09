@@ -50,9 +50,9 @@ void Bird::update(double dt)
   y += dy;
 }
 
-void Bird::draw(QPainter & p) const
+void Bird::draw(QPainter & painter) const
 {
-  p.drawPixmap(x, y, image);
+  painter.drawPixmap(x, y, image);
 }
 
 void Bird::jump()
