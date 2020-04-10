@@ -27,10 +27,16 @@
 #include <QFontDatabase>
 
 Font::Font()
-  : medium("04b_19", 14), flappy("04b_19", 28), huge("04b_19", 56)
 {
   QFontDatabase font_db;
-  font_db.addApplicationFont(":/fonts/flappy");
+  int id = font_db.addApplicationFont(":/fonts/flappy");
+  QStringList families = font_db.applicationFontFamilies(id);
+  medium.setFamily(families.first());
+  medium.setPointSize(14);
+  flappy.setFamily(families.first());
+  flappy.setPointSize(28);
+  huge.setFamily(families.first());
+  huge.setPointSize(56);
 }
 
 QFont Font::medium_font()
