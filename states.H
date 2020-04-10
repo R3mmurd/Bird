@@ -53,12 +53,6 @@ class TitleScreenState :
 public:
   TitleScreenState();
 
-  void enter(GameMain *) override;
-
-  void exec(GameMain *, double) override;
-
-  void exit(GameMain *) override;
-
   void draw(GameMain *, QPainter &) override;
 
   void key_pressed(GameMain *, QKeyEvent *) override;
@@ -77,11 +71,7 @@ public:
 
   void exec(GameMain *, double) override;
 
-  void exit(GameMain *) override;
-
   void draw(GameMain *, QPainter &) override;
-
-  void key_pressed(GameMain *, QKeyEvent *) override;
 };
 
 class PlayState :
@@ -109,12 +99,6 @@ class ScoreState :
 
 public:
   ScoreState();
-
-  void enter(GameMain *) override;
-
-  void exec(GameMain *, double) override;
-
-  void exit(GameMain *) override;
 
   void draw(GameMain *, QPainter &) override;
 

@@ -47,6 +47,7 @@ GameMain::GameMain(QWidget *parent):
 void GameMain::update_loop()
 {
   double dt = time.elapsed()/1000.0;
+  time.restart();
 
   if (not Global::pause)
     {
@@ -55,7 +56,6 @@ void GameMain::update_loop()
     }
 
   this->repaint();
-  time.restart();
 }
 
 void GameMain::paintEvent(QPaintEvent *)

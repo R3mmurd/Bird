@@ -36,21 +36,6 @@ TitleScreenState::TitleScreenState()
   selection[1] = {GameModeChallenging::get_ptr_instance(), 140};
 }
 
-void TitleScreenState::enter(GameMain *)
-{
-  // Empty
-}
-
-void TitleScreenState::exec(GameMain *, double)
-{
-  // Empty
-}
-
-void TitleScreenState::exit(GameMain *)
-{
-  // Empty
-}
-
 void TitleScreenState::draw(GameMain *, QPainter & painter)
 {
   painter.setFont(Font::get_instance().flappy_font());
@@ -106,22 +91,12 @@ void CountDownState::exec(GameMain * sm, double dt)
     sm->change_state(PlayState::get_ptr_instance());
 }
 
-void CountDownState::exit(GameMain *)
-{
-  // Empty
-}
-
 void CountDownState::draw(GameMain *, QPainter & painter)
 {
   painter.setFont(Font::get_instance().huge_font());
   painter.drawText(0, 0, Global::VIRTUAL_WIDTH, Global::VIRTUAL_HEIGHT,
                    Qt::AlignCenter, QString().setNum(count));
 
-}
-
-void CountDownState::key_pressed(GameMain *, QKeyEvent *)
-{
-  // Empty
 }
 
 void PlayState::enter(GameMain * sm)
@@ -175,21 +150,6 @@ void PlayState::key_pressed(GameMain * sm, QKeyEvent *event)
 
 ScoreState::ScoreState()
   : empty_star(":/images/empty-star"), fill_star(":/images/fill-star")
-{
-  // Empty
-}
-
-void ScoreState::enter(GameMain *)
-{
-  // Empty
-}
-
-void ScoreState::exec(GameMain *, double)
-{
-  // Empty
-}
-
-void ScoreState::exit(GameMain *)
 {
   // Empty
 }
