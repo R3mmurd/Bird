@@ -1,5 +1,5 @@
 /*
-  Fatty Bird (a Flappy Bird remake).
+  Bird (a Flappy Bird remake).
   
   Author: Alejandro Mujica (aledrums@gmail.com)
 */
@@ -7,12 +7,14 @@
 #ifndef GLOBAL_H
 #define GLOBAL_H
 
+#include <QString>
 #include <chrono>
 #include <gamemode.H>
 
 class Global
 {
 public:
+  static const QString GAME_TITLE;
   static constexpr int WINDOW_WIDTH = 1280;
   static constexpr int WINDOW_HEIGHT = 720;
   static constexpr int VIRTUAL_WIDTH = 512;

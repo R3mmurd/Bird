@@ -1,5 +1,5 @@
 /*
-  Fatty Bird (a Flappy Bird remake).
+  Bird (a Flappy Bird remake).
   
   Author: Alejandro Mujica (aledrums@gmail.com)
 */
@@ -22,7 +22,7 @@ void TitleScreenState::draw(GameMain *, QPainter & painter)
 {
   painter.setFont(Font::get_instance().flappy_font());
   painter.drawText(0, 0, Global::VIRTUAL_WIDTH, Global::VIRTUAL_HEIGHT/2,
-                   Qt::AlignCenter, QString("Fatty Bird"));
+                   Qt::AlignCenter, QString(Global::GAME_TITLE));
   painter.setFont(Font::get_instance().medium_font());
   painter.drawPixmap(Global::VIRTUAL_WIDTH/2.0+60,
                      selection[int(is_challenging_mode)].y, feather);

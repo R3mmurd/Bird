@@ -1,4 +1,4 @@
-# Fatty Bird
+# Bird
 
 A remake of the [Flappy Bird](https://en.wikipedia.org/wiki/Flappy_Bird) game by Dong Nguyen.
 

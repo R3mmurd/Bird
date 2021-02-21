@@ -1,10 +1,12 @@
 /*
-  Fatty Bird (a Flappy Bird remake).
+  Bird (a Flappy Bird remake).
   
   Author: Alejandro Mujica (aledrums@gmail.com)
 */
 
 #include <global.H>
+
+const QString Global::GAME_TITLE = "Bird";
 
 const unsigned Global::RANDOM_SEED =
     std::chrono::system_clock::now().time_since_epoch().count();

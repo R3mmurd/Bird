@@ -1,5 +1,5 @@
-﻿/*
-  Fatty Bird (a Flappy Bird remake).
+﻿  /*
+  Bird (a Flappy Bird remake).
   
   Author: Alejandro Mujica (aledrums@gmail.com)
 */
